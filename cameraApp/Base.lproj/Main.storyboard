@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cameraApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quI-Pp-2lb">
+                                <rect key="frame" x="0.0" y="532" width="320" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vl-KB-EMB">
+                                        <rect key="frame" x="120" y="-39" width="80" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="BNE-E9-LMa"/>
+                                            <constraint firstAttribute="height" constant="64" id="YEf-uv-s9b"/>
+                                        </constraints>
+                                        <state key="normal" image="img_camera.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gSP-zx-5YB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="1Vl-KB-EMB" firstAttribute="top" secondItem="quI-Pp-2lb" secondAttribute="top" constant="-39" id="SUY-fE-7bh"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Vl-KB-EMB" secondAttribute="trailing" constant="120" id="X8R-hg-05g"/>
+                                    <constraint firstItem="1Vl-KB-EMB" firstAttribute="leading" secondItem="quI-Pp-2lb" secondAttribute="leading" constant="120" id="gkY-lN-GXX"/>
+                                    <constraint firstAttribute="height" constant="36" id="pqC-KK-XMS"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Vl-KB-EMB" secondAttribute="bottom" constant="11" id="xNe-8t-dvD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="quI-Pp-2lb" secondAttribute="bottom" id="4kQ-8z-QHh"/>
+                            <constraint firstAttribute="trailing" secondItem="quI-Pp-2lb" secondAttribute="trailing" id="6RM-RQ-zcB"/>
+                            <constraint firstItem="quI-Pp-2lb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sZC-X9-xk0"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="369"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="img_camera.png" width="412" height="328"/>
+    </resources>
+</document>
